@@ -80,6 +80,8 @@
     <Compile Include="NullToZeroConverter Tests\TestObject.cs" />
     <Compile Include="NullToZeroConverter Tests\When_deserializing_null_int.cs" />
     <Compile Include="RequestEngine Tests\When_checking_a_null_response_for_exceptions.cs" />
+    <Compile Include="ShopifyAbandonedCartService Tests\Test_Data\CheckoutCreation.cs" />
+    <Compile Include="ShopifyAbandonedCartService Tests\when_counting_checkouts.cs" />
     <Compile Include="ShopifyApplicationCreditService Tests\Utils.cs" />
     <Compile Include="ShopifyApplicationCreditService Tests\When_creating_an_application_credit.cs" />
     <Compile Include="ShopifyApplicationCreditService Tests\When_getting_an_application_credit.cs" />
@@ -290,10 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="AppSettings.example.config" />
-    <None Include="AppSettings.private.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="AppSettings.private.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -313,6 +312,7 @@
     <None Include="Playlists\Themes.playlist" />
     <None Include="Playlists\Transactions.playlist" />
     <None Include="Playlists\Webhooks.playlist" />
+    <None Include="ShopifyAbandonedCartService Tests\Test_Data\checkout.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShopifySharp\ShopifySharp.csproj">
